@@ -1,0 +1,13 @@
+/* animations.css: keyframes and utility motion. All motion is disabled for reduced-motion users. */
+@keyframes blink{50%{opacity:0}}
+@keyframes scan{from{top:-120px}to{top:100%}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,255,136,.5)}50%{box-shadow:0 0 0 8px rgba(0,255,136,0)}}
+.cursor{display:inline-block;width:.6em;height:1em;vertical-align:text-bottom;background:var(--neon);animation:blink 1s steps(1) infinite}
+.fade-up{animation:fadeUp .5s ease both}
+.pulse{animation:pulse 2s infinite}
+.loader{width:28px;height:28px;margin:1.5rem auto;border:2px solid var(--border);border-top-color:var(--neon);border-radius:50%;animation:spin .8s linear infinite}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important;scroll-behavior:auto!important}
+}
