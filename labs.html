@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CyberSec Command Center: hands-on cybersecurity training with sandboxed labs.">
+  <title>Labs | CyberSec Command Center</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/matrix.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body data-page="labs">
+  <canvas id="matrix" aria-hidden="true"></canvas>
+  <div class="scan-hud" aria-hidden="true"></div>
+  <div id="nav"></div>
+  <main class="container">
+
+    <h1 class="section-title">labs</h1>
+    <div class="toolbar"><input id="search" class="search" type="search" placeholder="search challenges..." aria-label="Search labs"></div>
+    <div id="chips" class="toolbar" role="group" aria-label="Filter by difficulty"></div>
+    <section id="grid" class="grid" aria-live="polite"><div class="loader"></div></section>
+  </main>
+  <footer class="footer">CyberSec Command Center. Practice only on systems you own or are authorized to test.</footer>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/terminal.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
