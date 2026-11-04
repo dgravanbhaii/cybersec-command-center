@@ -1,12 +1,254 @@
-<nav class="navbar">
-    <div class="logo">CYBERSEC</div>
+<!DOCTYPE html>
+<html lang="en">
 
-    <ul>
-        <li>Dashboard</li>
-        <li>Courses</li>
-        <li>Labs</li>
-        <li>Challenges</li>
-        <li>Resources</li>
-        <li>Leaderboard</li>
-    </ul>
-</nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSec Command Center</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/matrix.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+
+    <!-- Matrix Canvas -->
+    <canvas id="matrix"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            CYBER<span>SEC</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="labs.html">Labs</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
+
+        <div id="clock"></div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1 class="glow">
+                CYBERSEC COMMAND CENTER
+            </h1>
+
+            <p class="tagline">
+                Learn • Practice • Defend
+            </p>
+
+            <p class="description">
+                A futuristic cybersecurity learning platform with
+                interactive labs, learning paths and hands-on security
+                challenges.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="courses.html" class="btn-primary">
+                    Browse Courses
+                </a>
+
+                <a href="labs.html" class="btn-secondary">
+                    Launch Labs
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Statistics -->
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+            <h3 id="users">0</h3>
+            <p>Active Users</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="courses">0</h3>
+            <p>Courses</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="labs">0</h3>
+            <p>Labs</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="challenges">0</h3>
+            <p>Challenges</p>
+        </div>
+
+    </section>
+
+    <!-- Features -->
+
+    <section class="features">
+
+        <h2>Mission Control</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>Web Security</h3>
+                <p>
+                    Learn secure web development and modern defense techniques.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Linux Security</h3>
+                <p>
+                    Build practical administration and system-hardening skills.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Network Fundamentals</h3>
+                <p>
+                    Understand protocols, monitoring, and network defense.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Cloud Security</h3>
+                <p>
+                    Explore modern cloud environments and security concepts.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Terminal -->
+
+    <section class="terminal-section">
+
+        <h2>Interactive Terminal</h2>
+
+        <div class="terminal-window">
+
+            <div class="terminal-header">
+                root@cybersec:~$
+            </div>
+
+            <div class="terminal-body" id="terminal-output">
+
+                <p>> Initializing Command Center...</p>
+                <p>[ OK ] Dashboard Loaded</p>
+                <p>[ OK ] Security Modules Loaded</p>
+                <p>[ OK ] Mission Control Ready</p>
+
+                <div class="terminal-input">
+
+                    <span>root@cybersec:~$</span>
+
+                    <input
+                        type="text"
+                        id="command-input"
+                        placeholder="Type help..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Learning Paths -->
+
+    <section class="learning-paths">
+
+        <h2>Learning Paths</h2>
+
+        <div class="path-grid">
+
+            <div class="path-card">
+                <h3>Beginner</h3>
+                <p>
+                    Networking, Linux, Security Fundamentals
+                </p>
+            </div>
+
+            <div class="path-card">
+                <h3>Intermediate</h3>
+                <p>
+                    Application Security and Security Operations
+                </p>
+            </div>
+
+            <div class="path-card">
+                <h3>Advanced</h3>
+                <p>
+                    Threat Analysis, Incident Response and Research
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Recent Activities -->
+
+    <section class="activity-section">
+
+        <h2>Recent Updates</h2>
+
+        <div class="activity-card">
+
+            <ul>
+                <li>✅ New Linux Security Course Added</li>
+                <li>✅ Dashboard Performance Improved</li>
+                <li>✅ New Learning Resources Published</li>
+                <li>✅ Matrix Engine Updated</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+                CyberSec Command Center © 2026
+            </p>
+
+            <p>
+                Learn Ethically • Build Responsibly • Defend Professionally
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="assets/js/matrix.js"></script>
+    <script src="assets/js/terminal.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/api.js"></script>
+
+</body>
+
+</html>
